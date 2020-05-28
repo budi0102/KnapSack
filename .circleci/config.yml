@@ -10,3 +10,13 @@
      steps:
        - checkout
        - run: dotnet build
+       - run: echo $CIRCLE_BUILD_URL
+       - run: echo $CIRCLE_INTERNAL_TASK_DATA
+       - run: echo $CIRCLE_JOB
+       - run: echo $CIRCLE_PROJECT_REPONAME
+       - run: echo $CIRCLE_PROJECT_USERNAME
+       - run: echo $CIRCLE_REPOSITORY_URL
+       - run: echo $CIRCLE_USERNAME
+       - run: echo $CIRCLE_WORKFLOW_ID
+       - run: echo $CIRCLE_WORKING_DIRECTORY
+       - run: echo $HOME
